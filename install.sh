@@ -2,12 +2,12 @@
 
 sudo chmod 1777 /tmp
 
-#for file in /u16all/version/*.sh;
-#do
- # . "$file"
-#done
+for file in /u16all/version/*.sh;
+do
+  . "$file"
+done
 
-. /u16all/version/sqlite_3.sh
+#. /u16all/version/sqlite_3.sh
 
 mkdir -p /var/lib/neo4j/conf
 cd /u16all && cp -rf neo4j-server.properties /var/lib/neo4j/conf/
