@@ -8,4 +8,4 @@ build:
   pull: false
  ci:
   - mongo --eval "db.stats()"
-    shippable_service mongodb stop	
+  - shippable_service mongodb stop	
