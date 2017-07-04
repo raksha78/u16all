@@ -1,6 +1,6 @@
 language: none
 services:
- - elasticsearch
+ - cassandra
 build:
  pre_ci_boot:
   image_name: raksha78/latest16
