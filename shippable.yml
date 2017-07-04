@@ -1,11 +1,11 @@
 language: none
 services:
- - mongodb
+ - mysql
 build:
  pre_ci_boot:
   image_name: raksh78/latest16
   image_tag: latest
   pull: false
  ci:
-  - mongo --eval "db.stats()"
-  - shippable_service mongodb stop	
+  - mysql -e "show databases;"
+  - shippable_service mysql stop
