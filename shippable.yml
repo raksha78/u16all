@@ -1,11 +1,11 @@
 language: none
 services:
- - redis
+ - rethinkdb
 build:
  pre_ci_boot:
   image_name: raksh78/latest16
   image_tag: latest
   pull: false
  ci:
-  - (echo "INFO"; echo -e "\nQUIT") | nc 127.0.0.1 6379
-  - shippable_service redis stop
+  - echo "Hello, World!"
+  - shippable_service rethinkdb stop
