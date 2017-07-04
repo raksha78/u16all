@@ -8,4 +8,4 @@ build:
   pull: false
  ci:
   - curl localhost:7474
-  - shippable_services neo4j stop 
+  - shippable_service neo4j stop 
