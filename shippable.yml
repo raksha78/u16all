@@ -1,11 +1,11 @@
 language: none
 services:
- - mysql
+ - neo4j
 build:
  pre_ci_boot:
   image_name: raksh78/latest16
   image_tag: latest
   pull: false
  ci:
-  - mysql -e "show databases;"
-  - shippable_service mysql stop
+  - curl localhost:7474
+  - shippable_services neo4j stop 
