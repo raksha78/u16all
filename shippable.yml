@@ -3,7 +3,7 @@ services:
  - cassandra
 build:
  pre_ci_boot:
-  image_name: raksha78/latest16
+  image_name: raksh78/latest16
   image_tag: latest
   pull: false
  ci:
