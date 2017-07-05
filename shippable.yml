@@ -8,4 +8,4 @@ build:
   pull: false
  ci:
   - curl --head http://localhost:4444
-  - shippable_service selenium stop
+  
