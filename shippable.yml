@@ -1,11 +1,11 @@
 language: none
 services:
- - rethinkdb
+ - riak
 build:
  pre_ci_boot:
   image_name: raksh78/latest16
   image_tag: latest
   pull: false
  ci:
-  - echo "Hello, World!"
-  
+  - riak-admin status
+  - shippable_service riak stop
