@@ -8,4 +8,4 @@ build:
   pull: false
  ci:
   - echo "Hello, World!"
-  - shippable_service rethinkdb stop
+  
