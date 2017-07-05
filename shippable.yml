@@ -1,11 +1,11 @@
 language: none
 services:
- - sqlite
+ - mysql
 build:
-# pre_ci_boot:
-#  image_name: raksh78/latest16
-#  image_tag: latest
-#  pull: false
+ pre_ci_boot:
+  image_name: raksh78/latest16
+  image_tag: latest
+  pull: false
  ci:
-  - echo "Hello, World!"
-  
+  - mysql -e "show databases;"
+  - shippable_service mysql stop
