@@ -7,6 +7,7 @@ do
   . "$file"
 done
 
+
 mkdir -p /var/lib/neo4j/conf
 cd /u16all && cp -rf neo4j-server.properties /var/lib/neo4j/conf/
 
